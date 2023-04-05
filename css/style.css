@@ -1,0 +1,271 @@
+
+
+:root{
+ --bg-size: 100% 100%;
+--main-color: #fff;
+--title: sans-serif;
+--font-para: serif;
+--btn-color: #bbe1fa;
+--btn-font-color: #000;
+--btn-font: 1.5rem;
+--eff: all .3s ease;
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+font-family: var(--font-para);
+}
+
+html{
+font-size: 62.5%;
+
+}
+
+p, label, input::placeholder {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+figure img,
+.fab{
+transition: var(--eff);
+}
+
+a{
+text-decoration: none;
+}
+
+li{ list-style: none; }
+
+body{
+background: hsl(84deg 3% 94%);
+}
+
+
+.main_heading{
+font-family: var(--title);
+    font-weight: bold;
+    font-size: 5rem;
+    color: #000;
+
+}
+
+
+.main_heading__para{
+    font-size: 2.2rem;
+}
+
+.main_header__div{
+    height: calc(100vh - 40vh);
+    background-image: linear-gradient(78deg, rgba(0,0,0,.8) 39%, rgba(0,0,0,0) 77%),url(../img/workspace.jpg);
+    background-size: var(--bg-size);
+}
+
+.main_header__div p{
+    font-size: calc(2vw + 1.5rem);
+    font-weight: bold;
+    font-family: var(--title);
+    color: var(--main-color);
+}
+
+.main_header__div h2 {
+    font-size: calc(2vw + 2.5rem);
+    color: var(--main-color);
+    font-weight: bold;
+    font-family: var(--title);
+    position: relative;
+    padding-bottom: 2rem;
+    transition: var(--eff);
+}
+
+.main_header__div span{
+font-family: var(--title);
+}
+
+.main_header__div div li{
+font-weight: bold;
+    height: 4.5rem;
+    margin-bottom: 4.3rem;
+    border: 3px solid white;
+    display: block;
+    font-family: var(--title);
+}
+
+.my_btn,
+.main_header__div button{
+    color: var(--btn-font-color);
+    border : none;
+    font-size: var(--btn-font);
+    transition: var(--eff);
+    padding: 0.8rem 2rem;
+    background-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    width: 127px;
+}
+
+.my_btn:hover,
+figure img:hover,
+.main_header__div button:hover{
+transform: translateY(-.5rem);
+box-shadow: 0 1rem 3rem -1rem rgba(255,255,255, .67);
+}
+
+.blog_left__div h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--title);
+}
+
+.blog_left__div .blog-title{
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.blog_left__div .blog-title span{
+    color: #1b262c;
+}
+
+
+.blog_left__div p span{
+color: #1b262c;
+}
+
+
+
+.replies{
+margin:2rem 0;
+padding: 1rem 0;
+transition: var(--eff);
+display:none;
+}
+
+.thapa_show{
+margin:20px 0;
+display:block;
+}
+
+
+
+.like_btn i{
+font-weight: bold;
+color:gray;
+}
+
+.like_btn.liked i{
+color:red;
+}
+
+
+/* right side div style start */ 
+
+.about_me__div {
+height: 40rem;
+display:flex;
+	justify-content:flex-end;
+	align-items:flex-start;
+	flex-direction:column;
+	background-image: linear-gradient(to bottom, transparent 50%, rgba(208, 206, 207, .8) 50%), url("../img/person.svg") ;
+	background-size: var(--bg-size);
+
+}
+
+
+
+.about_me__div p:first-child {
+padding-bottom:.2rem;
+	font-size: 2.2rem;
+}
+.about_me__div p{
+font-size: 1.8rem;
+	padding-bottom: 1rem;
+	color:#000;
+}
+.right_div__title{
+background:#d0cecf;;
+	box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,.7);
+}
+
+.right_div__title h2 {
+font-size:2.5rem;
+}
+
+.popular_post__imgs{
+	background-image: url('../img/team.svg');
+background-size:var(--bg-size);
+}
+
+.right_sub__div{
+	background:#fff;
+	padding: 2.5rem 1rem;
+}
+.right_sub__div .row{
+	margin-bottom: 2rem;
+	padding-left: 1rem;
+}
+.right_sub__div .row:last-child{
+margin-bottom:0;
+}
+
+.row > .right_div__post{
+padding-left:0;
+	padding-right:0;
+}
+
+
+/* tags style  */
+
+.tags_main a{
+	font-size: 1.7rem;
+line-height: 170%;
+	font-weight:lighter;
+	background:#6c757d;
+	transition: var(--eff);
+	
+}
+.tags_main{
+display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(4rem, 8rem));
+	grid-gap:.5rem;
+ }
+
+
+.tags_main a:hover{
+color: var(--btn-font-color);
+background: var(--btn-color);
+}
+
+
+.advertise_img{
+	min-width:100%;
+	height:20rem;
+	display:grid;
+	place-items:center;
+}
+
+.fab{
+	   color: #000;
+}
+.fab:hover{
+	    color: darkslateblue;
+	transform: rotate(360deg);
+}
+
+/* right subscribe style */
+
+.right_sub__div #exampleInputEmail {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+}
+
+
+
+
+
+
+
